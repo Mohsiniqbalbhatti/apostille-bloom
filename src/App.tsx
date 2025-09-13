@@ -6,6 +6,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import HecPage from "./pages/HecPage";
 import MofaPage from "./pages/MofaPage";
+import IbccPage from "./pages/IbccPage";
+import BtePage from "./pages/BtePage";
+import EmbassyPage from "./pages/EmbassyPage";
+import TranslationPage from "./pages/TranslationPage";
 import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
 
@@ -21,6 +25,10 @@ const App = () => (
           <Route path="/" element={<HomePage />} />
           <Route path="/hec" element={<HecPage />} />
           <Route path="/mofa" element={<MofaPage />} />
+          <Route path="/ibcc" element={<IbccPage />} />
+          <Route path="/bte" element={<BtePage />} />
+          <Route path="/embassy" element={<EmbassyPage />} />
+          <Route path="/translation" element={<TranslationPage />} />
           <Route path="/contact" element={<ContactPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
