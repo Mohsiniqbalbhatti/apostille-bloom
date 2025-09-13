@@ -113,7 +113,7 @@ const IbccPage = () => {
                   Get Started Today
                 </Button>
               </Link>
-              <Button size="lg" variant="outline" className="border-primary-foreground/20 hover:bg-primary-foreground/10">
+              <Button size="lg" className="btn-outline border-2 border-white text-white hover:bg-white hover:text-primary">
                 Learn More
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
@@ -218,7 +218,7 @@ const IbccPage = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Documents We <span className="text-gradient">Verify</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-muted-foreground">
               Complete IBCC verification services for all types of secondary education documents
             </p>
           </div>
@@ -266,7 +266,7 @@ const IbccPage = () => {
 
       {/* FAQ Section */}
       <section className="section-padding">
-        <div className="container max-w-4xl">
+        <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Frequently Asked <span className="text-gradient">Questions</span>

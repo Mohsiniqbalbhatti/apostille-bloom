@@ -144,7 +144,7 @@ const EmbassyPage = () => {
                   Get Started Today
                 </Button>
               </Link>
-              <Button size="lg" variant="outline" className="border-primary-foreground/20 hover:bg-primary-foreground/10">
+              <Button size="lg" className="btn-outline border-2 border-white text-white hover:bg-white hover:text-primary">
                 View Countries
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
@@ -249,7 +249,7 @@ const EmbassyPage = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Popular <span className="text-gradient">Embassy Services</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-muted-foreground">
               Fast and reliable embassy attestation for the most requested destinations
             </p>
           </div>
@@ -286,13 +286,12 @@ const EmbassyPage = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Documents We <span className="text-gradient">Handle</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-muted-foreground">
               Complete embassy attestation services for all types of documents
             </p>
           </div>
 
-          <div className="max-w-4xl mx-auto">
-            <Card className="card-elevated">
+          <Card className="card-elevated">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
                   <Flag className="w-8 h-8 text-accent mr-3" />
@@ -309,7 +308,6 @@ const EmbassyPage = () => {
               </CardContent>
             </Card>
           </div>
-        </div>
       </section>
 
       {/* Process Steps */}
@@ -317,7 +315,7 @@ const EmbassyPage = () => {
 
       {/* FAQ Section */}
       <section className="section-padding bg-secondary/30">
-        <div className="container max-w-4xl">
+        <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Frequently Asked <span className="text-gradient">Questions</span>

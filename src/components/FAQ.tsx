@@ -50,7 +50,6 @@ const FAQ = () => {
   return (
     <section className="section-padding bg-secondary/30">
       <div className="container">
-        <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -108,7 +107,6 @@ const FAQ = () => {
               </button>
             </div>
           </div>
-        </div>
       </div>
 
       {/* Structured Data for SEO */}

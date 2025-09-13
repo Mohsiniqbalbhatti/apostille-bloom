@@ -80,7 +80,7 @@ const ServicesGrid = () => {
     <section className="section-padding bg-secondary/30">
       <div className="container">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
+        <div className="text-center max-w-4xl mx-auto mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Our <span className="text-gradient">Attestation Services</span>
           </h2>

@@ -128,7 +128,7 @@ const BtePage = () => {
                   Get Started Today
                 </Button>
               </Link>
-              <Button size="lg" variant="outline" className="border-primary-foreground/20 hover:bg-primary-foreground/10">
+              <Button size="lg" className="btn-outline border-2 border-white text-white hover:bg-white hover:text-primary">
                 Learn More
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
@@ -233,7 +233,7 @@ const BtePage = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Provincial <span className="text-gradient">BTE Boards</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-muted-foreground">
               We handle attestation from all major provincial boards across Pakistan
             </p>
           </div>
@@ -264,13 +264,12 @@ const BtePage = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Documents We <span className="text-gradient">Attest</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-muted-foreground">
               Complete BTE attestation services for all types of technical and vocational education documents
             </p>
           </div>
 
-          <div className="max-w-4xl mx-auto">
-            <Card className="card-elevated">
+          <Card className="card-elevated">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
                   <Wrench className="w-8 h-8 text-accent mr-3" />
@@ -287,7 +286,6 @@ const BtePage = () => {
               </CardContent>
             </Card>
           </div>
-        </div>
       </section>
 
       {/* Process Steps */}
@@ -295,7 +293,7 @@ const BtePage = () => {
 
       {/* FAQ Section */}
       <section className="section-padding bg-secondary/30">
-        <div className="container max-w-4xl">
+        <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Frequently Asked <span className="text-gradient">Questions</span>

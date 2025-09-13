@@ -58,10 +58,11 @@ const Hero = () => {
           {/* Main Heading */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-slide-in">
             <span className="block">Trusted Document</span>
-            <span className="block">Attestation Services</span>
-            <span className="block text-gradient bg-gradient-to-r from-accent-light to-accent bg-clip-text text-transparent">
+            <span className="block">Attestation Services</span>      
+            <span className="block text-gradient bg-gradient-to-r from-accent-light to-accent bg-clip-text text-transparent pb-3">
               {taglines[currentTagline]}
             </span>
+            <span className="block text-2xl text-yellow-500">نہ قطار، نہ انتظار</span>
           </h1>
 
           {/* Subtitle */}
@@ -85,11 +86,6 @@ const Hero = () => {
               <Button size="lg" className="bg-accent hover:bg-accent-light text-accent-foreground px-8 py-4 text-lg">
                 Get Started Now
                 <ArrowRight className="w-5 h-5 ml-2" />
-              </Button>
-            </Link>
-            <Link to="/services">
-              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg">
-                View All Services
               </Button>
             </Link>
           </div>

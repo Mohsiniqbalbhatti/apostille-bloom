@@ -139,7 +139,7 @@ const TranslationPage = () => {
                   Get Quote Today
                 </Button>
               </Link>
-              <Button size="lg" variant="outline" className="border-primary-foreground/20 hover:bg-primary-foreground/10">
+              <Button size="lg" className="btn-outline border-2 border-white text-white hover:bg-white hover:text-primary">
                 View Languages
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
@@ -245,7 +245,7 @@ const TranslationPage = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               <span className="text-gradient">Languages</span> We Translate
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-muted-foreground">
               Professional translation services in major international languages
             </p>
           </div>
@@ -280,7 +280,7 @@ const TranslationPage = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Document <span className="text-gradient">Categories</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-muted-foreground">
               We translate all types of official documents with certified accuracy
             </p>
           </div>
@@ -348,7 +348,7 @@ const TranslationPage = () => {
 
       {/* FAQ Section */}
       <section className="section-padding bg-secondary/30">
-        <div className="container max-w-4xl">
+        <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Frequently Asked <span className="text-gradient">Questions</span>

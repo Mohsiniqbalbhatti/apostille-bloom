@@ -1,4 +1,5 @@
 import { FileText, Upload, CheckCircle, Download } from 'lucide-react';
+import { downloadChecklist } from '@/lib/downloadUtils';
 
 const ProcessSteps = () => {
   const steps = [
@@ -36,7 +37,7 @@ const ProcessSteps = () => {
     <section className="section-padding bg-background">
       <div className="container">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
+        <div className="text-center max-w-4xl mx-auto mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             How It <span className="text-gradient">Works</span>
           </h2>
@@ -54,11 +55,11 @@ const ProcessSteps = () => {
             {steps.map((step, index) => (
               <div 
                 key={index} 
-                className="relative group animate-fade-in"
+                className="relative group animate-fade-in flex flex-col"
                 style={{ animationDelay: `${0.2 * index}s` }}
               >
                 {/* Step Card */}
-                <div className="card-elevated text-center p-8 relative z-10 group-hover:scale-105 transition-all duration-300">
+                <div className="card-elevated text-center p-8 relative z-10 group-hover:scale-105 transition-all duration-300 h-full flex flex-col">
                   {/* Step Number */}
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
                     {step.step}
@@ -74,7 +75,7 @@ const ProcessSteps = () => {
                     {step.title}
                   </h3>
                   
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed flex-1">
                     {step.description}
                   </p>
                 </div>
@@ -94,7 +95,7 @@ const ProcessSteps = () => {
 
         {/* Bottom Section */}
         <div className="text-center mt-16 animate-fade-in" style={{ animationDelay: '1s' }}>
-          <div className="card-elevated p-8 max-w-2xl mx-auto">
+          <div className="card-elevated p-8">
             <h3 className="text-2xl font-bold mb-4">
               Ready to Get Started?
             </h3>
@@ -105,7 +106,10 @@ const ProcessSteps = () => {
               <button className="btn-primary">
                 Start Your Application
               </button>
-              <button className="btn-outline">
+              <button 
+                className="btn-outline"
+                onClick={() => downloadChecklist('General')}
+              >
                 Download Checklist
               </button>
             </div>

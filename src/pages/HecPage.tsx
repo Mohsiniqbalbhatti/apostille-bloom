@@ -3,6 +3,7 @@ import Footer from '@/components/Footer';
 import { GraduationCap, Clock, CheckCircle, FileText, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import { downloadChecklist } from '@/lib/downloadUtils';
 
 const HecPage = () => {
   const features = [
@@ -68,7 +69,11 @@ const HecPage = () => {
                     Start HEC Attestation
                   </Button>
                 </Link>
-                <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4">
+                <Button 
+                  size="lg" 
+                  className="btn-outline border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4"
+                  onClick={() => downloadChecklist('HEC')}
+                >
                   Download Checklist
                 </Button>
               </div>
@@ -154,7 +159,6 @@ const HecPage = () => {
         {/* Required Documents */}
         <section className="section-padding">
           <div className="container">
-            <div className="max-w-4xl mx-auto">
               <h2 className="text-4xl font-bold text-center mb-12">
                 Required <span className="text-gradient">Documents</span>
               </h2>
@@ -212,7 +216,6 @@ const HecPage = () => {
                   </Button>
                 </Link>
               </div>
-            </div>
           </div>
         </section>
       </main>

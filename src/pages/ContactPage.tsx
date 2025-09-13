@@ -75,7 +75,7 @@ const ContactPage = () => {
               <h2 className="text-4xl font-bold mb-6">
                 Our <span className="text-gradient">Office Locations</span>
               </h2>
-              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-xl text-muted-foreground">
                 Visit us at any of our convenient locations across Pakistan for in-person assistance
               </p>
             </div>
@@ -123,7 +123,7 @@ const ContactPage = () => {
         {/* Emergency Contact */}
         <section className="section-padding bg-secondary/30">
           <div className="container">
-            <div className="card-elevated p-12 text-center max-w-4xl mx-auto">
+            <div className="card-elevated p-12 text-center">
               <h2 className="text-3xl font-bold mb-6">
                 Need Urgent Assistance?
               </h2>

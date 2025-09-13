@@ -3,6 +3,7 @@ import Footer from '@/components/Footer';
 import { Building2, Clock, CheckCircle, FileText, Globe, Shield } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import { downloadChecklist } from '@/lib/downloadUtils';
 
 const MofaPage = () => {
   const features = [
@@ -72,7 +73,11 @@ const MofaPage = () => {
                     Start MOFA Attestation
                   </Button>
                 </Link>
-                <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4">
+                <Button 
+                  size="lg" 
+                  className="btn-outline border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4"
+                  onClick={() => downloadChecklist('MOFA')}
+                >
                   View Requirements
                 </Button>
               </div>
@@ -159,11 +164,11 @@ const MofaPage = () => {
 
             <div className="grid md:grid-cols-3 gap-8">
               {documentTypes.map((category, index) => (
-                <div key={index} className="card-elevated p-8 text-center hover:scale-105 transition-transform">
-                  <h3 className="text-2xl font-semibold mb-6 text-primary">{category.category}</h3>
+                <div key={index} className="card-elevated p-8 hover:scale-105 transition-transform">
+                  <h3 className="text-2xl font-semibold mb-6 text-primary text-center">{category.category}</h3>
                   <ul className="space-y-3">
                     {category.items.map((item, idx) => (
-                      <li key={idx} className="flex items-center justify-center">
+                      <li key={idx} className="flex items-center">
                         <CheckCircle className="w-4 h-4 text-accent mr-3 flex-shrink-0" />
                         <span className="text-sm">{item}</span>
                       </li>
@@ -187,8 +192,7 @@ const MofaPage = () => {
               </p>
             </div>
 
-            <div className="max-w-4xl mx-auto">
-              <div className="relative">
+            <div className="relative">
                 {/* Timeline line */}
                 <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary to-accent hidden md:block"></div>
                 
@@ -224,9 +228,9 @@ const MofaPage = () => {
                         {item.step}
                       </div>
                       <div className="flex-1 pb-8">
-                        <div className="flex items-center gap-4 mb-2">
+                        <div className="flex items-center gap-4 mb-2 flex-wrap">
                           <h3 className="text-xl font-semibold">{item.title}</h3>
-                          <span className="text-sm text-accent font-medium bg-accent/10 px-3 py-1 rounded-full">
+                          <span className="text-xs font-semibold text-white bg-gradient-to-r from-accent to-primary px-3 py-1.5 rounded-full shadow-sm border border-accent/20">
                             {item.time}
                           </span>
                         </div>
@@ -235,7 +239,6 @@ const MofaPage = () => {
                     </div>
                   ))}
                 </div>
-              </div>
             </div>
           </div>
         </section>
@@ -252,8 +255,7 @@ const MofaPage = () => {
               </p>
             </div>
 
-            <div className="max-w-4xl mx-auto">
-              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
                 {countries.map((country, index) => (
                   <div key={index} className="bg-card border border-card-border rounded-lg p-4 text-center hover:bg-primary hover:text-primary-foreground transition-colors">
                     <span className="font-medium">{country}</span>
@@ -263,14 +265,13 @@ const MofaPage = () => {
               <p className="text-center text-muted-foreground mt-8">
                 And many more countries worldwide...
               </p>
-            </div>
           </div>
         </section>
 
         {/* CTA Section */}
         <section className="section-padding">
           <div className="container">
-            <div className="card-elevated p-12 text-center max-w-4xl mx-auto">
+            <div className="card-elevated p-12 text-center">
               <h2 className="text-3xl font-bold mb-6">
                 Ready for MOFA Attestation?
               </h2>
