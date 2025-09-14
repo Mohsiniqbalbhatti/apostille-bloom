@@ -19,6 +19,8 @@ import {
   ArrowRight
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import FloatingActionButton from "@/components/FloatingActionButton";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const IbccPage = () => {
   const documents = [
@@ -81,6 +83,18 @@ const IbccPage = () => {
     {
       question: "What is the difference between IBCC and HEC attestation?",
       answer: "IBCC handles secondary education certificates (up to intermediate level), while HEC (Higher Education Commission) handles university degrees and higher education documents."
+    },
+    {
+      question: "Can I get IBCC verification for certificates from any Pakistani board?",
+      answer: "Yes, IBCC verifies certificates from all recognized education boards in Pakistan including federal boards, provincial boards, and technical education boards across all provinces."
+    },
+    {
+      question: "What if my certificate has errors or discrepancies?",
+      answer: "If there are errors in names, dates, or other details, you'll need to get corrections from the issuing board first. We can guide you through this correction process before proceeding with IBCC verification."
+    },
+    {
+      question: "Is IBCC verification required for employment in Pakistan?",
+      answer: "While not always mandatory for local employment, IBCC verification adds credibility to your educational credentials and may be required by some employers, especially government institutions."
     }
   ];
 
@@ -297,6 +311,8 @@ const IbccPage = () => {
       </section>
 
       <Footer />
+      <FloatingActionButton />
+      <ScrollToTop />
     </div>
   );
 };

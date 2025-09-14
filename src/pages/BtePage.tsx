@@ -19,6 +19,8 @@ import {
   ArrowRight
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import FloatingActionButton from "@/components/FloatingActionButton";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const BtePage = () => {
   const documents = [
@@ -324,6 +326,8 @@ const BtePage = () => {
       </section>
 
       <Footer />
+      <FloatingActionButton />
+      <ScrollToTop />
     </div>
   );
 };

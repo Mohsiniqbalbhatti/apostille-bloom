@@ -7,6 +7,8 @@ import Footer from '@/components/Footer';
 import LatestUpdatesMarquee from '@/components/LatestUpdatesMarquee';
 import CountryFlagsMarquee from '@/components/CountryFlagsMarquee';
 import FAQ from '@/components/FAQ';
+import FloatingActionButton from '@/components/FloatingActionButton';
+import ScrollToTop from '@/components/ScrollToTop';
 
 const HomePage = () => {
   return (
@@ -22,6 +24,8 @@ const HomePage = () => {
         <ContactForm />
       </main>
       <Footer />
+      <FloatingActionButton />
+      <ScrollToTop />
     </div>
   );
 };

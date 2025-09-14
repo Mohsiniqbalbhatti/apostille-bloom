@@ -19,6 +19,8 @@ import {
   ArrowRight
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import FloatingActionButton from "@/components/FloatingActionButton";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const TranslationPage = () => {
   const familyDocuments = [
@@ -184,11 +186,23 @@ const TranslationPage = () => {
                 organizations.
               </p>
 
-              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 We have experienced agents with comprehensive expertise in legal translation services, 
                 specializing in various types of MOFA translation services. Our innovative, accurate, 
                 and cost-effective translation solutions are trusted by thousands of clients.
               </p>
+
+              <div className="p-6 bg-secondary/30 rounded-lg mb-8">
+                <h4 className="font-semibold text-lg mb-3 text-primary">Why Choose Our Translation Services?</h4>
+                <ul className="space-y-2 text-sm">
+                  <li>• <strong>25+ Years Experience:</strong> Serving clients since 1998 with unmatched expertise</li>
+                  <li>• <strong>Native Translators:</strong> All translations done by native speakers of target languages</li>
+                  <li>• <strong>Official Certification:</strong> Certified translations accepted by all embassies and authorities</li>
+                  <li>• <strong>Quality Assurance:</strong> Multi-tier review process ensuring 99.9% accuracy</li>
+                  <li>• <strong>Express Service:</strong> Same-day translation available for urgent requirements</li>
+                  <li>• <strong>Confidential:</strong> Strict confidentiality maintained for all documents</li>
+                </ul>
+              </div>
 
               <div className="grid sm:grid-cols-2 gap-4">
                 {features.map((feature, index) => (
@@ -379,6 +393,8 @@ const TranslationPage = () => {
       </section>
 
       <Footer />
+      <FloatingActionButton />
+      <ScrollToTop />
     </div>
   );
 };

@@ -19,6 +19,8 @@ import {
   ArrowRight
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import FloatingActionButton from "@/components/FloatingActionButton";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const EmbassyPage = () => {
   const countries = [
@@ -346,6 +348,8 @@ const EmbassyPage = () => {
       </section>
 
       <Footer />
+      <FloatingActionButton />
+      <ScrollToTop />
     </div>
   );
 };

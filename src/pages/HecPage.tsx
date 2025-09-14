@@ -4,6 +4,8 @@ import { GraduationCap, Clock, CheckCircle, FileText, Star } from 'lucide-react'
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { downloadChecklist } from '@/lib/downloadUtils';
+import FloatingActionButton from '@/components/FloatingActionButton';
+import ScrollToTop from '@/components/ScrollToTop';
 
 const HecPage = () => {
   const features = [
@@ -109,6 +111,17 @@ const HecPage = () => {
                     <span><strong>Global Recognition:</strong> 150+ Countries</span>
                   </div>
                 </div>
+                
+                <div className="mt-8 p-6 bg-secondary/30 rounded-lg">
+                  <h3 className="text-lg font-semibold mb-4 text-primary">Why Choose HEC Attestation?</h3>
+                  <ul className="space-y-2 text-sm">
+                    <li>• <strong>Official Government Verification:</strong> Direct authentication from Pakistan's Higher Education Commission</li>
+                    <li>• <strong>International Acceptance:</strong> Recognized by universities, employers, and authorities worldwide</li>
+                    <li>• <strong>Fast Processing:</strong> Get your degrees verified within 24-48 hours through our expedited service</li>
+                    <li>• <strong>Comprehensive Coverage:</strong> All Pakistani universities and degree programs covered</li>
+                    <li>• <strong>Expert Handling:</strong> Professional team with 15+ years of experience in educational document verification</li>
+                  </ul>
+                </div>
               </div>
               
               <div className="grid gap-6">
@@ -163,7 +176,7 @@ const HecPage = () => {
                 Required <span className="text-gradient">Documents</span>
               </h2>
               
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-3 gap-8">
                 <div className="card-elevated p-8">
                   <h3 className="text-2xl font-semibold mb-6">For Degree Attestation</h3>
                   <ul className="space-y-3">
@@ -207,6 +220,53 @@ const HecPage = () => {
                     </li>
                   </ul>
                 </div>
+
+                <div className="card-elevated p-8">
+                  <h3 className="text-2xl font-semibold mb-6">Additional Requirements</h3>
+                  <ul className="space-y-3">
+                    <li className="flex items-center">
+                      <CheckCircle className="w-5 h-5 text-accent mr-3" />
+                      University registration/admission letter
+                    </li>
+                    <li className="flex items-center">
+                      <CheckCircle className="w-5 h-5 text-accent mr-3" />
+                      Provisional certificate (if applicable)
+                    </li>
+                    <li className="flex items-center">
+                      <CheckCircle className="w-5 h-5 text-accent mr-3" />
+                      Migration certificate (for transfers)
+                    </li>
+                    <li className="flex items-center">
+                      <CheckCircle className="w-5 h-5 text-accent mr-3" />
+                      Processing fee payment receipt
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Important Notes */}
+              <div className="mt-12 p-8 bg-secondary/30 rounded-lg">
+                <h3 className="text-xl font-semibold mb-4 text-primary">Important Notes:</h3>
+                <div className="grid md:grid-cols-2 gap-6 text-sm">
+                  <div>
+                    <h4 className="font-semibold mb-2">Document Requirements:</h4>
+                    <ul className="space-y-1 text-muted-foreground">
+                      <li>• All documents must be clear and legible</li>
+                      <li>• No photocopies accepted for original submission</li>
+                      <li>• Name spellings must match across all documents</li>
+                      <li>• Damaged documents may be rejected</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-2">Processing Information:</h4>
+                    <ul className="space-y-1 text-muted-foreground">
+                      <li>• HEC verification directly from university records</li>
+                      <li>• Express service available for urgent cases</li>
+                      <li>• Track your application status online</li>
+                      <li>• Free consultation on document requirements</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
 
               <div className="text-center mt-12">
@@ -218,9 +278,50 @@ const HecPage = () => {
               </div>
           </div>
         </section>
+
+        {/* Common Challenges & Solutions */}
+        <section className="section-padding bg-secondary/30">
+          <div className="container">
+            <h2 className="text-4xl font-bold text-center mb-12">
+              Common Challenges & <span className="text-gradient">Solutions</span>
+            </h2>
+            
+            <div className="grid lg:grid-cols-2 gap-8">
+              <div className="space-y-6">
+                <div className="card-elevated p-6">
+                  <h4 className="font-semibold text-lg mb-3 text-primary">University Non-Responsiveness</h4>
+                  <p className="text-muted-foreground text-sm mb-3">Some universities take longer to respond to HEC verification requests, causing delays.</p>
+                  <p className="text-accent text-sm font-medium">Our Solution: Direct communication channels with universities to expedite verification process.</p>
+                </div>
+                
+                <div className="card-elevated p-6">
+                  <h4 className="font-semibold text-lg mb-3 text-primary">Document Discrepancies</h4>
+                  <p className="text-muted-foreground text-sm mb-3">Name spellings or dates don't match across CNIC, passport, and academic documents.</p>
+                  <p className="text-accent text-sm font-medium">Our Solution: Guide you through correction process and liaise with relevant authorities.</p>
+                </div>
+              </div>
+              
+              <div className="space-y-6">
+                <div className="card-elevated p-6">
+                  <h4 className="font-semibold text-lg mb-3 text-primary">Incomplete Documentation</h4>
+                  <p className="text-muted-foreground text-sm mb-3">Missing stamps, signatures, or documents can lead to rejection and delays.</p>
+                  <p className="text-accent text-sm font-medium">Our Solution: Pre-verification service to ensure all requirements are met before submission.</p>
+                </div>
+                
+                <div className="card-elevated p-6">
+                  <h4 className="font-semibold text-lg mb-3 text-primary">Processing Delays</h4>
+                  <p className="text-muted-foreground text-sm mb-3">High application volumes can extend processing times beyond normal timeframes.</p>
+                  <p className="text-accent text-sm font-medium">Our Solution: Express processing service and real-time status updates throughout the process.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <Footer />
+      <FloatingActionButton />
+      <ScrollToTop />
     </div>
   );
 };

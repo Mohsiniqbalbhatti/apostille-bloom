@@ -4,6 +4,8 @@ import { Building2, Clock, CheckCircle, FileText, Globe, Shield } from 'lucide-r
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { downloadChecklist } from '@/lib/downloadUtils';
+import FloatingActionButton from '@/components/FloatingActionButton';
+import ScrollToTop from '@/components/ScrollToTop';
 
 const MofaPage = () => {
   const features = [
@@ -268,8 +270,59 @@ const MofaPage = () => {
           </div>
         </section>
 
-        {/* CTA Section */}
+        {/* Common Challenges */}
         <section className="section-padding">
+          <div className="container">
+            <h2 className="text-4xl font-bold text-center mb-12">
+              Common Challenges & <span className="text-gradient">Solutions</span>
+            </h2>
+            
+            <div className="grid lg:grid-cols-2 gap-8">
+              <div className="space-y-6">
+                <div className="card-elevated p-6">
+                  <h4 className="font-semibold text-lg mb-3 text-primary">Incomplete Documentation</h4>
+                  <p className="text-muted-foreground text-sm mb-3">Missing stamps, incorrect names, or outdated formats can lead to delays and rejections.</p>
+                  <p className="text-accent text-sm font-medium">Our Solution: Pre-verification service ensuring all documents meet MOFA criteria before submission.</p>
+                </div>
+                
+                <div className="card-elevated p-6">
+                  <h4 className="font-semibold text-lg mb-3 text-primary">Processing Delays</h4>
+                  <p className="text-muted-foreground text-sm mb-3">High application volumes and procedural complexities can extend processing times.</p>
+                  <p className="text-accent text-sm font-medium">Our Solution: Direct follow-up with MOFA officials and expedited processing for urgent cases.</p>
+                </div>
+                
+                <div className="card-elevated p-6">
+                  <h4 className="font-semibold text-lg mb-3 text-primary">Hidden Fees</h4>
+                  <p className="text-muted-foreground text-sm mb-3">Unexpected charges can arise during the attestation process, causing budget concerns.</p>
+                  <p className="text-accent text-sm font-medium">Our Solution: Transparent pricing with no hidden charges - all costs communicated upfront.</p>
+                </div>
+              </div>
+              
+              <div className="space-y-6">
+                <div className="card-elevated p-6">
+                  <h4 className="font-semibold text-lg mb-3 text-primary">Document Discrepancies</h4>
+                  <p className="text-muted-foreground text-sm mb-3">Name or date inconsistencies across CNIC, passport, and documents can cause rejections.</p>
+                  <p className="text-accent text-sm font-medium">Our Solution: Document correction guidance and liaison with relevant authorities for amendments.</p>
+                </div>
+                
+                <div className="card-elevated p-6">
+                  <h4 className="font-semibold text-lg mb-3 text-primary">Forged Documents</h4>
+                  <p className="text-muted-foreground text-sm mb-3">Using unauthorized documents can result in legal penalties and permanent bans.</p>
+                  <p className="text-accent text-sm font-medium">Our Solution: We only process genuine documents and verify authenticity before submission.</p>
+                </div>
+                
+                <div className="card-elevated p-6">
+                  <h4 className="font-semibold text-lg mb-3 text-primary">Communication Issues</h4>
+                  <p className="text-muted-foreground text-sm mb-3">Unclear instructions and misunderstanding requirements lead to submission errors.</p>
+                  <p className="text-accent text-sm font-medium">Our Solution: Step-by-step guidance and dedicated support throughout the entire process.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="section-padding bg-secondary/30">
           <div className="container">
             <div className="card-elevated p-12 text-center">
               <h2 className="text-3xl font-bold mb-6">
@@ -295,6 +348,8 @@ const MofaPage = () => {
       </main>
 
       <Footer />
+      <FloatingActionButton />
+      <ScrollToTop />
     </div>
   );
 };
