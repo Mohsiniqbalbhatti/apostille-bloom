@@ -97,27 +97,29 @@ const ServicesGrid = () => {
               style={{ animationDelay: `${0.1 * index}s` }}
             >
               {/* Service Icon & Header */}
-              <div className="p-12 pb-8 flex items-center justify-center flex-col text-start ">
-                <div className={`w-48 h-48 bg-white rounded-3xl mb-8 flex items-center  justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg border border-gray-100`}>
-                  <img src={service.logo} alt={`${service.title} Logo`} className="w-36 h-36 object-contain" />
+              <div className="p-12 pb-8">
+                <div className="flex justify-center mb-8">
+                  <div className={`w-48 h-48 bg-white rounded-3xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg border border-gray-100`}>
+                    <img src={service.logo} alt={`${service.title} Logo`} className="w-36 h-36 object-contain" />
+                  </div>
                 </div>
                 
-                <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors">
+                <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors text-start">
                   {service.title}
                 </h3>
                 
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-muted-foreground mb-6 leading-relaxed text-start">
                   {service.description}
                 </p>
 
                 {/* Processing Time */}
-                <div className="flex items-center text-sm text-accent font-medium mb-6">
+                <div className="flex items-center text-sm text-accent font-medium mb-6 justify-start">
                   <Clock className="w-4 h-4 mr-2" />
                   {service.processingTime}
                 </div>
 
                 {/* Features */}
-                <ul className="space-y-3 mb-8">
+                <ul className="space-y-3 mb-8 text-start">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center text-sm">
                       <Shield className="w-4 h-4 text-accent mr-3 flex-shrink-0" />
