@@ -97,9 +97,9 @@ const ServicesGrid = () => {
               style={{ animationDelay: `${0.1 * index}s` }}
             >
               {/* Service Icon & Header */}
-              <div className="p-12 pb-8 ">
+              <div className="p-12 pb-8 flex items-center justify-center flex-col text-start ">
                 <div className={`w-48 h-48 bg-white rounded-3xl mb-8 flex items-center  justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg border border-gray-100`}>
-                  <img src={service.logo} alt={`${service.title} Logo`} className="w-36 h-36 object-contain mx-auto" />
+                  <img src={service.logo} alt={`${service.title} Logo`} className="w-36 h-36 object-contain" />
                 </div>
                 
                 <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors">
