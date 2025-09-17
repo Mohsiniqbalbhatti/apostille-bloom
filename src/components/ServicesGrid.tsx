@@ -2,14 +2,15 @@ import { Link } from 'react-router-dom';
 import { 
   ArrowRight,
   Clock,
-  Shield
+  Shield,
+  Award,
+  Building,
+  Languages
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import hecLogo from '@/assets/logos/hec-logo.png';
 import mofaLogo from '@/assets/logos/mofa-logo.svg';
 import ibccLogo from '@/assets/logos/ibcc-logo.png';
-import bteLogo from '@/assets/logos/bte-logo.png';
-import embassyLogo from '@/assets/logos/embassy-logo.png';
 
 const ServicesGrid = () => {
   const services = [
@@ -18,6 +19,7 @@ const ServicesGrid = () => {
       title: 'HEC Attestation',
       description: 'Higher Education Commission document verification for degrees, diplomas, and academic certificates.',
       logo: hecLogo,
+      useIcon: false,
       features: ['Degree Verification', 'Diploma Attestation', 'Academic Records'],
       processingTime: '24-48 hours',
       link: '/hec',
@@ -28,6 +30,7 @@ const ServicesGrid = () => {
       title: 'MOFA Attestation',
       description: 'Ministry of Foreign Affairs certification for international document recognition.',
       logo: mofaLogo,
+      useIcon: false,
       features: ['Document Certification', 'Global Recognition', 'Official Stamps'],
       processingTime: '2-3 days',
       link: '/mofa',
@@ -38,6 +41,7 @@ const ServicesGrid = () => {
       title: 'IBCC Verification',
       description: 'Inter Board Committee of Chairmen verification for secondary education certificates.',
       logo: ibccLogo,
+      useIcon: false,
       features: ['Certificate Verification', 'Grade Equivalency', 'Academic Validation'],
       processingTime: '3-5 days',
       link: '/ibcc',
@@ -47,7 +51,8 @@ const ServicesGrid = () => {
       id: 'bte',
       title: 'BTE Attestation',
       description: 'Board of Technical Education verification for technical and vocational certificates.',
-      logo: bteLogo,
+      icon: Award,
+      useIcon: true,
       features: ['Technical Certificates', 'Vocational Training', 'Skill Verification'],
       processingTime: '2-4 days',
       link: '/bte',
@@ -57,7 +62,8 @@ const ServicesGrid = () => {
       id: 'embassy',
       title: 'Embassy Services',
       description: 'Embassy attestation and consular services for specific country requirements.',
-      logo: embassyLogo,
+      icon: Building,
+      useIcon: true,
       features: ['Embassy Stamps', 'Consular Services', 'Country-Specific Requirements'],
       processingTime: '5-7 days',
       link: '/embassy',
@@ -67,7 +73,8 @@ const ServicesGrid = () => {
       id: 'translation',
       title: 'Translation Services',
       description: 'Certified document translation services in multiple languages.',
-      logo: embassyLogo, // Using embassy logo as placeholder for translation
+      icon: Languages,
+      useIcon: true,
       features: ['Certified Translation', '20+ Languages', 'Official Acceptance'],
       processingTime: '1-3 days',
       link: '/translation',
@@ -100,7 +107,11 @@ const ServicesGrid = () => {
               <div className="p-12 pb-8">
                 <div className="flex justify-center mb-8">
                   <div className={`w-48 h-48 bg-white rounded-3xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg border border-gray-100`}>
-                    <img src={service.logo} alt={`${service.title} Logo`} className="w-36 h-36 object-contain" />
+                    {service.useIcon ? (
+                      <service.icon className="w-20 h-20 text-primary" />
+                    ) : (
+                      <img src={service.logo} alt={`${service.title} Logo`} className="w-36 h-36 object-contain" />
+                    )}
                   </div>
                 </div>
                 
