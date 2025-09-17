@@ -61,22 +61,22 @@ const Footer = () => {
             </div>
             
             <p className="text-primary-foreground/80 mb-6 leading-relaxed">
-              Your trusted partner for professional document attestation services. We provide fast, secure, and reliable HEC, MOFA, IBCC, BTE, and Embassy attestation services.
+              Your trusted partner for professional document attestation services. We provide fast, secure, and reliable HEC, MOFA, IBCC, BTE, and Embassy attestation services across Pakistan.
             </p>
 
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-accent" />
-                <span className="text-sm">+92-XXX-XXXXXXX</span>
+                <span className="text-sm">+92 325 7590012</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-accent" />
-                <span className="text-sm">info@apostillemofa.com</span>
+                <span className="text-sm">info@adamsconsultant.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4 text-accent" />
-                <span className="text-sm">Islamabad, Pakistan</span>
+                <span className="text-sm">Gulberg 3, Lahore</span>
               </div>
             </div>
           </div>

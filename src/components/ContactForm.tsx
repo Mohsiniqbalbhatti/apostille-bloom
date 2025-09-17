@@ -73,19 +73,19 @@ const ContactForm = () => {
     {
       icon: Phone,
       title: 'Phone',
-      details: ['+92-XXX-XXXXXXX', '+92-XXX-XXXXXXX'],
+      details: ['+92 325 7590012', '+92 313 7995726'],
       color: 'from-primary to-primary-light'
     },
     {
       icon: Mail,
       title: 'Email',
-      details: ['info@apostillemofa.com', 'support@apostillemofa.com'],
+      details: ['info@adamsconsultant.com', 'mailsi@adamsconsultant.com'],
       color: 'from-accent to-accent-light'
     },
     {
       icon: MapPin,
       title: 'Office',
-      details: ['Main Office, Islamabad', 'Branch Office, Lahore'],
+      details: ['Office # 7, 7th Floor, Liberty gate plaza, MM Alam Road, Gulberg 3 Lahore', 'Main Multan Road, Opposite Decent Bakers, Mailsi, 61200'],
       color: 'from-primary-light to-accent'
     }
   ];

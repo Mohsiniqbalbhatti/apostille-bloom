@@ -7,24 +7,17 @@ import { MapPin, Phone, Mail, Clock, MessageCircle } from 'lucide-react';
 const ContactPage = () => {
   const offices = [
     {
-      city: 'Islamabad',
-      address: 'G-11 Markaz, Islamabad Capital Territory',
-      phone: '+92-51-XXXXXXX',
-      email: 'islamabad@apostillemofa.com',
+      city: 'Lahore Head Office',
+      address: 'Office # 7, 7th Floor, Liberty gate plaza, MM Alam Road, Gulberg 3 Lahore',
+      phone: '+92 325 7590012',
+      email: 'info@adamsconsultant.com',
       hours: 'Mon-Fri: 9:00 AM - 6:00 PM, Sat: 9:00 AM - 2:00 PM'
     },
     {
-      city: 'Lahore',
-      address: 'Gulberg III, Lahore, Punjab',
-      phone: '+92-42-XXXXXXX', 
-      email: 'lahore@apostillemofa.com',
-      hours: 'Mon-Fri: 9:00 AM - 6:00 PM, Sat: 9:00 AM - 2:00 PM'
-    },
-    {
-      city: 'Karachi',
-      address: 'Clifton Block 2, Karachi, Sindh',
-      phone: '+92-21-XXXXXXX',
-      email: 'karachi@apostillemofa.com', 
+      city: 'Mailsi Branch',
+      address: 'Main Multan Road, Opposite Decent Bakers, Mailsi, 61200',
+      phone: '+92 313 7995726', 
+      email: 'mailsi@adamsconsultant.com',
       hours: 'Mon-Fri: 9:00 AM - 6:00 PM, Sat: 9:00 AM - 2:00 PM'
     }
   ];
@@ -50,11 +43,11 @@ const ContactPage = () => {
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <div className="flex items-center justify-center space-x-3">
                   <Phone className="w-5 h-5 text-accent-light" />
-                  <span>+92-XXX-XXXXXXX</span>
+                  <span>+92 325 7590012</span>
                 </div>
                 <div className="flex items-center justify-center space-x-3">
                   <Mail className="w-5 h-5 text-accent-light" />
-                  <span>info@apostillemofa.com</span>
+                  <span>info@adamsconsultant.com</span>
                 </div>
                 <div className="flex items-center justify-center space-x-3">
                   <MessageCircle className="w-5 h-5 text-accent-light" />
@@ -80,7 +73,7 @@ const ContactPage = () => {
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-3 gap-8">
+            <div className="grid lg:grid-cols-2 gap-8">
               {offices.map((office, index) => (
                 <div key={index} className="card-elevated p-8 text-center hover:scale-105 transition-transform">
                   <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-xl mx-auto mb-6 flex items-center justify-center">
@@ -137,8 +130,8 @@ const ContactPage = () => {
                   <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-full mx-auto mb-4 flex items-center justify-center">
                     <Phone className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="font-semibold mb-2">Emergency Hotline</h3>
-                  <p className="text-muted-foreground">+92-XXX-EMERGENCY</p>
+                   <h3 className="font-semibold mb-2">Emergency Hotline</h3>
+                   <p className="text-muted-foreground">+92 325 7590012</p>
                 </div>
                 
                 <div className="text-center">
@@ -153,8 +146,8 @@ const ContactPage = () => {
                   <div className="w-16 h-16 bg-gradient-to-br from-primary-light to-accent-light rounded-full mx-auto mb-4 flex items-center justify-center">
                     <Mail className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="font-semibold mb-2">Priority Email</h3>
-                  <p className="text-muted-foreground">urgent@apostillemofa.com</p>
+                   <h3 className="font-semibold mb-2">Priority Email</h3>
+                   <p className="text-muted-foreground">info@adamsconsultant.com</p>
                 </div>
               </div>
               
