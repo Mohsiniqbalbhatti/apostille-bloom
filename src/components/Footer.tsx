@@ -37,10 +37,10 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { name: 'Facebook', href: '#', icon: Facebook },
-    { name: 'Twitter', href: '#', icon: Twitter },
-    { name: 'LinkedIn', href: '#', icon: Linkedin },
-    { name: 'Instagram', href: '#', icon: Instagram },
+    { name: 'Facebook', href: 'https://www.facebook.com/adamsconsultants', icon: Facebook },
+    { name: 'Instagram', href: 'https://www.instagram.com/adams.consultants', icon: Instagram },
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/adams-consultants-a93185343/', icon: Linkedin },
+    { name: 'Twitter', href: 'https://www.tiktok.com/@adams_consultants', icon: Twitter },
   ];
 
   return (

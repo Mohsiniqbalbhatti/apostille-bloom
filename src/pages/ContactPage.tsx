@@ -104,7 +104,10 @@ const ContactPage = () => {
                     </div>
                   </div>
                   
-                  <button className="w-full mt-6 btn-outline">
+                  <button 
+                    className="w-full mt-6 btn-outline"
+                    onClick={() => window.open(office.city === 'Lahore Head Office' ? 'https://maps.app.goo.gl/BxSn41ZUhH1vDB4h9' : 'https://maps.app.goo.gl/q9uoBPSVJhTwpArd9', '_blank')}
+                  >
                     Get Directions
                   </button>
                 </div>
