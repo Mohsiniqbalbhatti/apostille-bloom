@@ -37,6 +37,17 @@ const ServicesGrid = () => {
       color: 'from-accent to-accent-light'
     },
     {
+      id: 'mofa-apostille',
+      title: 'MOFA Apostille',
+      description: 'Hague Convention Apostille certification for 124+ member countries with premium authentication.',
+      logo: mofaLogo,
+      useIcon: false,
+      features: ['Hague Convention', 'Premium Service', '124+ Countries'],
+      processingTime: '3-5 days',
+      link: '/mofa-apostille',
+      color: 'from-primary to-accent'
+    },
+    {
       id: 'ibcc',
       title: 'IBCC Verification',
       description: 'Inter Board Committee of Chairmen verification for secondary education certificates.',

@@ -8,6 +8,7 @@ import FloatingActionButton from "@/components/FloatingActionButton";
 import HomePage from "./pages/HomePage";
 import HecPage from "./pages/HecPage";
 import MofaPage from "./pages/MofaPage";
+import MofaApostillePage from "./pages/MofaApostillePage";
 import IbccPage from "./pages/IbccPage";
 import BtePage from "./pages/BtePage";
 import EmbassyPage from "./pages/EmbassyPage";
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/" element={<HomePage />} />
           <Route path="/hec" element={<HecPage />} />
           <Route path="/mofa" element={<MofaPage />} />
+          <Route path="/mofa-apostille" element={<MofaApostillePage />} />
           <Route path="/ibcc" element={<IbccPage />} />
           <Route path="/bte" element={<BtePage />} />
           <Route path="/embassy" element={<EmbassyPage />} />

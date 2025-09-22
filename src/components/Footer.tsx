@@ -23,6 +23,7 @@ const Footer = () => {
   const services = [
     { name: 'HEC Attestation', href: '/hec' },
     { name: 'MOFA Attestation', href: '/mofa' },
+    { name: 'MOFA Apostille', href: '/mofa-apostille' },
     { name: 'IBCC Verification', href: '/ibcc' },
     { name: 'BTE Attestation', href: '/bte' },
     { name: 'Embassy Services', href: '/embassy' },
