@@ -41,7 +41,7 @@ const Footer = () => {
     { name: 'Facebook', href: 'https://www.facebook.com/adamsconsultants', icon: Facebook },
     { name: 'Instagram', href: 'https://www.instagram.com/adams.consultants', icon: Instagram },
     { name: 'LinkedIn', href: 'https://www.linkedin.com/in/adams-consultants-a93185343/', icon: Linkedin },
-    { name: 'Twitter', href: 'https://www.tiktok.com/@adams_consultants', icon: Twitter },
+    { name: 'Twitter', href: 'https://www.tiktok.com/@adams_consultants', icon: Tiktok },
   ];
 
   return (
@@ -142,12 +142,8 @@ const Footer = () => {
               <h5 className="font-semibold mb-3">Office Hours</h5>
               <div className="text-sm space-y-1">
                 <div className="flex justify-between">
-                  <span>Mon - Fri:</span>
+                  <span>Mon - Sat:</span>
                   <span>9:00 AM - 6:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Saturday:</span>
-                  <span>9:00 AM - 2:00 PM</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Sunday:</span>
