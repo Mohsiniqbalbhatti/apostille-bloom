@@ -5,7 +5,7 @@ import {
   Mail, 
   MapPin, 
   Facebook, 
-  Twitter, 
+  Tiktok, 
   Linkedin, 
   Instagram 
 } from 'lucide-react';
