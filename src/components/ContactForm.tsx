@@ -80,8 +80,8 @@ const ContactForm = () => {
       icon: MapPin,
       title: 'Offices',
       details: [
-        { branch: 'Head Office', address: 'Office # 7, 7th Floor, Liberty gate plaza, MM Alam Road, Gulberg 3 Lahore', phone: '+92 325 7590012' },
-        { branch: 'Branch', address: 'Main Multan Road, Opposite Decent Bakers, Mailsi, 61200' }
+        { branch: 'Head Office Lahore', address: 'Office # 7, 7th Floor, Liberty gate plaza, MM Alam Road, Gulberg 3 Lahore', phone: '+92 325 7590012' },
+        { branch: 'Branch Mailsi', address: 'Main Multan Road, Opposite Decent Bakers, Mailsi, 61200', phone: '+92 313 7995726' }
       ],
       color: 'from-primary-light to-accent'
     }
