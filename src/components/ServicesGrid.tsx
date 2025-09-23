@@ -26,17 +26,6 @@ const ServicesGrid = () => {
       color: 'from-primary to-primary-light'
     },
     {
-      id: 'mofa',
-      title: 'MOFA Attestation',
-      description: 'Ministry of Foreign Affairs certification for international document recognition.',
-      logo: mofaLogo,
-      useIcon: false,
-      features: ['Document Certification', 'Global Recognition', 'Official Stamps'],
-      processingTime: '2-3 days',
-      link: '/mofa',
-      color: 'from-accent to-accent-light'
-    },
-    {
       id: 'mofa-apostille',
       title: 'MOFA Apostille',
       description: 'Hague Convention Apostille certification for 124+ member countries with premium authentication.',
