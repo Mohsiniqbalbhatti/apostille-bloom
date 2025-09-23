@@ -135,12 +135,8 @@ const ContactForm = () => {
                 <h4 className="font-semibold text-lg mb-4">Office Hours</h4>
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between">
-                    <span>Monday - Friday:</span>
+                    <span>Monday - Saturday:</span>
                     <span className="font-medium">9:00 AM - 6:00 PM</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Saturday:</span>
-                    <span className="font-medium">9:00 AM - 2:00 PM</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Sunday:</span>
