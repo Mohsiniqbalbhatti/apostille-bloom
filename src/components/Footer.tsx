@@ -5,10 +5,10 @@ import {
   Mail, 
   MapPin, 
   Facebook, 
-  Video, 
   Linkedin, 
   Instagram 
 } from 'lucide-react';
+import TikTokIcon from './icons/TikTokIcon';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -41,7 +41,7 @@ const Footer = () => {
     { name: 'Facebook', href: 'https://www.facebook.com/adamsconsultants', icon: Facebook },
     { name: 'Instagram', href: 'https://www.instagram.com/adams.consultants', icon: Instagram },
     { name: 'LinkedIn', href: 'https://www.linkedin.com/in/adams-consultants-a93185343/', icon: Linkedin },
-    { name: 'TikTok', href: 'https://www.tiktok.com/@adams_consultants', icon: Video },
+    { name: 'TikTok', href: 'https://www.tiktok.com/@adams_consultants', icon: TikTokIcon },
   ];
 
   return (
