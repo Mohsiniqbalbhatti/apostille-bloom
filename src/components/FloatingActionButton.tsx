@@ -26,7 +26,7 @@ const FloatingActionButton = () => {
 
       {/* Call Button */}
       <a
-        href="tel:+923137995726"
+        href="tel:+923257590012"
         className="group relative"
       >
         <Button
