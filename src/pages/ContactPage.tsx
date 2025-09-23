@@ -73,14 +73,30 @@ const ContactPage = () => {
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-8">
+            <div className="grid lg:grid-cols-3 gap-8">
               {offices.map((office, index) => (
-                <div key={index} className="card-elevated p-8 text-center hover:scale-105 transition-transform">
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-xl mx-auto mb-6 flex items-center justify-center">
-                    <MapPin className="w-8 h-8 text-white" />
+                <div key={index} className={`card-elevated p-8 text-center hover:scale-105 transition-transform relative ${
+                  office.city.includes('Head Office') ? 'lg:col-span-2 bg-gradient-to-br from-primary/5 to-accent/5 border-primary/20' : ''
+                }`}>
+                  {office.city.includes('Head Office') && (
+                    <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                      <span className="bg-gradient-to-r from-primary to-accent text-white px-4 py-1 rounded-full text-sm font-semibold shadow-lg">
+                        HEAD OFFICE
+                      </span>
+                    </div>
+                  )}
+                  
+                  <div className={`mx-auto mb-6 flex items-center justify-center rounded-xl ${
+                    office.city.includes('Head Office') 
+                      ? 'w-20 h-20 bg-gradient-to-br from-primary to-accent shadow-lg' 
+                      : 'w-16 h-16 bg-gradient-to-br from-primary to-accent'
+                  }`}>
+                    <MapPin className={office.city.includes('Head Office') ? 'w-10 h-10 text-white' : 'w-8 h-8 text-white'} />
                   </div>
                   
-                  <h3 className="text-2xl font-bold mb-4 text-primary">{office.city}</h3>
+                  <h3 className={`font-bold mb-4 text-primary ${
+                    office.city.includes('Head Office') ? 'text-3xl' : 'text-2xl'
+                  }`}>{office.city}</h3>
                   
                   <div className="space-y-4 text-left">
                     <div className="flex items-start space-x-3">
