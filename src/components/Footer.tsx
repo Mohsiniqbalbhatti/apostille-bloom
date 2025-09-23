@@ -62,7 +62,7 @@ const Footer = () => {
             </div>
             
             <p className="text-primary-foreground/80 mb-6 leading-relaxed">
-              Your trusted partner for professional document attestation services. We provide fast, secure, and reliable HEC, MOFA, IBCC, BTE, and Embassy attestation services across Pakistan.
+              Your trusted partner for professional document attestation services. We provide fast, secure, and reliable HEC, MOFA, MOFA Apostille, IBCC, BTE, and Embassy attestation services across Pakistan.
             </p>
 
             {/* Contact Info */}
