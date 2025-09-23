@@ -71,12 +71,6 @@ const ContactForm = () => {
 
   const contactInfo = [
     {
-      icon: Phone,
-      title: 'Phone',
-      details: ['+92 325 7590012', '+92 313 7995726'],
-      color: 'from-primary to-primary-light'
-    },
-    {
       icon: Mail,
       title: 'Email',
       details: ['info@adamsconsultant.com', 'mailsi@adamsconsultant.com'],
@@ -84,8 +78,11 @@ const ContactForm = () => {
     },
     {
       icon: MapPin,
-      title: 'Office',
-      details: ['Office # 7, 7th Floor, Liberty gate plaza, MM Alam Road, Gulberg 3 Lahore', 'Main Multan Road, Opposite Decent Bakers, Mailsi, 61200'],
+      title: 'Offices',
+      details: [
+        { branch: 'Head Office', address: 'Office # 7, 7th Floor, Liberty gate plaza, MM Alam Road, Gulberg 3 Lahore', phone: '+92 325 7590012' },
+        { branch: 'Branch', address: 'Main Multan Road, Opposite Decent Bakers, Mailsi, 61200' }
+      ],
       color: 'from-primary-light to-accent'
     }
   ];
@@ -121,11 +118,27 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg mb-2">{info.title}</h4>
-                    {info.details.map((detail, idx) => (
-                      <p key={idx} className="text-muted-foreground">
-                        {detail}
-                      </p>
-                    ))}
+                    {info.title === 'Offices' ? (
+                      info.details.map((office, idx) => (
+                        <div key={idx} className="mb-4 last:mb-0">
+                          <div className="font-bold text-primary mb-1">{office.branch}</div>
+                          <p className="text-muted-foreground text-sm mb-1">
+                            {office.address}
+                          </p>
+                          {office.phone && (
+                            <p className="text-muted-foreground text-sm font-medium">
+                              {office.phone}
+                            </p>
+                          )}
+                        </div>
+                      ))
+                    ) : (
+                      info.details.map((detail, idx) => (
+                        <p key={idx} className="text-muted-foreground">
+                          {detail}
+                        </p>
+                      ))
+                    )}
                   </div>
                 </div>
               ))}
