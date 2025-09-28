@@ -165,7 +165,7 @@ const Footer = () => {
             </div>
 
             {/* Legal Links */}
-            <div className="flex space-x-6">
+            {/* <div className="flex space-x-6">
               {legalLinks.map((link) => (
                 <Link
                   key={link.name}
@@ -175,7 +175,7 @@ const Footer = () => {
                   {link.name}
                 </Link>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
