@@ -30,12 +30,12 @@ const Footer = () => {
     { name: 'Translation', href: '/translation' },
   ];
 
-  const legalLinks = [
-    { name: 'Privacy Policy', href: '/privacy' },
-    { name: 'Terms of Service', href: '/terms' },
-    { name: 'Refund Policy', href: '/refunds' },
-    { name: 'Sitemap', href: '/sitemap' },
-  ];
+  // const legalLinks = [
+  //   { name: 'Privacy Policy', href: '/privacy' },
+  //   { name: 'Terms of Service', href: '/terms' },
+  //   { name: 'Refund Policy', href: '/refunds' },
+  //   { name: 'Sitemap', href: '/sitemap' },
+  // ];
 
   const socialLinks = [
     { name: 'Facebook', href: 'https://www.facebook.com/adamsconsultants', icon: Facebook },
