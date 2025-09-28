@@ -158,7 +158,7 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-primary-foreground/20">
         <div className="container py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0">
             {/* Copyright */}
             <div className="text-primary-foreground/80 text-sm">
               © {currentYear} MOFA Apostille Pakistan. All rights reserved.
